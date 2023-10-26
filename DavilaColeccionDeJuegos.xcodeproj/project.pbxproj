@@ -14,6 +14,7 @@
 		E29B50D22AE86A7900A50EF1 /* DavilaColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E29B50D02AE86A7900A50EF1 /* DavilaColeccionDeJuegos.xcdatamodeld */; };
 		E29B50D42AE86A7E00A50EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29B50D32AE86A7E00A50EF1 /* Assets.xcassets */; };
 		E29B50D72AE86A7E00A50EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29B50D52AE86A7E00A50EF1 /* LaunchScreen.storyboard */; };
+		E29B50DF2AE8782C00A50EF1 /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B50DE2AE8782C00A50EF1 /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E29B50D32AE86A7E00A50EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29B50D62AE86A7E00A50EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E29B50D82AE86A7E00A50EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29B50DE2AE8782C00A50EF1 /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				E29B50C92AE86A7900A50EF1 /* SceneDelegate.swift */,
 				E29B50CB2AE86A7900A50EF1 /* ViewController.swift */,
 				E29B50CD2AE86A7900A50EF1 /* Main.storyboard */,
+				E29B50DE2AE8782C00A50EF1 /* JuegosViewController.swift */,
 				E29B50D32AE86A7E00A50EF1 /* Assets.xcassets */,
 				E29B50D52AE86A7E00A50EF1 /* LaunchScreen.storyboard */,
 				E29B50D82AE86A7E00A50EF1 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29B50DF2AE8782C00A50EF1 /* JuegosViewController.swift in Sources */,
 				E29B50CC2AE86A7900A50EF1 /* ViewController.swift in Sources */,
 				E29B50C82AE86A7900A50EF1 /* AppDelegate.swift in Sources */,
 				E29B50D22AE86A7900A50EF1 /* DavilaColeccionDeJuegos.xcdatamodeld in Sources */,
