@@ -20,6 +20,32 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WFT-db-SKd">
                                 <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="a8O-nu-oZi" detailTextLabel="ZGn-TS-Gqe" style="IBUITableViewCellStyleSubtitle" id="6pR-kG-5Ia">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6pR-kG-5Ia" id="cUn-fY-E1d">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a8O-nu-oZi">
+                                                    <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZGn-TS-Gqe">
+                                                    <rect key="frame" x="20" y="22.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -34,7 +60,7 @@
                     <navigationItem key="navigationItem" id="svH-GP-8hN">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Sf5-ow-HtR">
                             <connections>
-                                <segue destination="MCz-2I-nue" kind="show" id="vUY-Wa-zne"/>
+                                <segue destination="MCz-2I-nue" kind="show" identifier="juegoSegue" id="vUY-Wa-zne"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -75,12 +101,27 @@
                                     <action selector="fotosTapped:" destination="MCz-2I-nue" eventType="touchUpInside" id="lBm-jw-n3U"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fx6-nO-ksQ">
+                                <rect key="frame" x="166" y="417" width="84" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="MCz-2I-nue" eventType="touchUpInside" id="2bz-6A-cTl"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDa-ry-Ezj">
+                                <rect key="frame" x="0.0" y="460" width="414" height="162"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MI2-59-Ao1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aob-Fi-smP" firstAttribute="centerX" secondItem="MI2-59-Ao1" secondAttribute="centerX" id="0ey-rb-kHC"/>
+                            <constraint firstItem="LDa-ry-Ezj" firstAttribute="top" secondItem="fx6-nO-ksQ" secondAttribute="bottom" constant="20" id="CQk-63-Rt5"/>
+                            <constraint firstItem="fx6-nO-ksQ" firstAttribute="top" secondItem="aob-Fi-smP" secondAttribute="bottom" constant="15" id="CqR-1k-4ZF"/>
+                            <constraint firstItem="LDa-ry-Ezj" firstAttribute="centerX" secondItem="MI2-59-Ao1" secondAttribute="centerX" id="NTf-i7-KSi"/>
                             <constraint firstItem="hYq-SP-eto" firstAttribute="top" secondItem="aAy-vd-qNq" secondAttribute="bottom" constant="20" id="PJi-GX-xzD"/>
+                            <constraint firstItem="fx6-nO-ksQ" firstAttribute="centerX" secondItem="MI2-59-Ao1" secondAttribute="centerX" id="Ptf-bp-tYX"/>
                             <constraint firstItem="hYq-SP-eto" firstAttribute="width" secondItem="aAy-vd-qNq" secondAttribute="width" multiplier="0.346429" id="PyH-Db-sxa"/>
                             <constraint firstItem="aAy-vd-qNq" firstAttribute="top" secondItem="MI2-59-Ao1" secondAttribute="top" constant="32" id="Ycu-KK-gW1"/>
                             <constraint firstItem="hYq-SP-eto" firstAttribute="centerX" secondItem="MI2-59-Ao1" secondAttribute="centerX" id="gbd-mB-pMt"/>
@@ -100,6 +141,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="JuegoImageView" destination="aAy-vd-qNq" id="Kr3-Xv-mrV"/>
+                        <outlet property="agregarActualizarBoton" destination="aob-Fi-smP" id="jIk-TT-gQX"/>
+                        <outlet property="eliminarBoton" destination="fx6-nO-ksQ" id="BLC-zI-Z0D"/>
+                        <outlet property="pickerCategorias" destination="LDa-ry-Ezj" id="qHZ-hG-YOw"/>
                         <outlet property="tituloTextField" destination="hYq-SP-eto" id="gwu-OF-MRN"/>
                     </connections>
                 </viewController>
